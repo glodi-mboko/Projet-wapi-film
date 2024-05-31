@@ -1,6 +1,6 @@
 <script setup>
 const route = useRoute();
-const baseUrl = `http://www.omdbapi.com/?apikey=edf3dda4&i=${route.params.id}`;
+const baseUrl = `https://www.omdbapi.com/?apikey=edf3dda4&i=${route.params.id}`;
 const testStatusUrl = "https://httpbin.org/status/500";
 // const res = await $fetch(baseUrl);
 
