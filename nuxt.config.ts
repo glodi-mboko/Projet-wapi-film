@@ -8,8 +8,10 @@ export default defineNuxtConfig({
   ],
   imports: {
     dirs: ["stores"] // importe automatiquement le store
+  },
+  routeRules: {
+    "/spa": { ssr: false },
+    "/static": { static: true },
+    "/swr": { swr: true }
   }
-  // alias: {
-  //   pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs"
-  // }
 })
